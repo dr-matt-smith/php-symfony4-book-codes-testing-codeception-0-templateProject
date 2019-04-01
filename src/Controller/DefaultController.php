@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class DefaultController extends AbstractController
 {
     /**
-     * @Route("/", name="default_homepage")
+     * @Route("/", name="default_index")
      */
     public function index()
     {
@@ -16,6 +16,7 @@ class DefaultController extends AbstractController
         $args = [];
         return $this->render($template, $args);
     }
+
 
 
 
